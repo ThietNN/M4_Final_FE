@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>City List</h1>
+<table>
+    <tr id="cityList">
+        <td>City</td>
+        <td>Country</td>
+        <td>Area</td>
+        <td>Population</td>
+        <td>GDP</td>
+        <td>Description</td>
+    </tr>
+    <tbody id="showCityList">
+    </tbody>
+</table>
+<form>
+    <h1>Add a new City</h1>
+    <table>
+        <tr>
+            <td>City Name:</td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td id="showCountryList"></td>
+        </tr>
+        <tr>
+            <td>Area:</td>
+            <td><input type="text" id="area" placeholder="area"></td>
+        </tr>
+        <tr>
+            <td>Population:</td>
+            <td><input type="text" id="population" placeholder="population"></td>
+        </tr>
+        <tr>
+            <td>GDP:</td>
+            <td><input type="text" id="gdp" placeholder="gdp"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input type="text" id="description" placeholder="description"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="addNewCity()">Save</button></td>
+        </tr>
+    </table>
+</form>
+<div id="updateCityInfo"></div>
+<script src="city.js"></script>
+</body>
+</html>
